@@ -44,7 +44,6 @@ Retorna a lista completa de Imagens.
 #### Exemplo de resposta:
 
 ```json
-<<<<<<< HEAD
 [
   {
     "nome": "Nome da Imagem",
