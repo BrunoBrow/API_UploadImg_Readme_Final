@@ -58,33 +58,6 @@ Retorna a lista completa de Imagens.
   }
 ]
 
-=======
-// Função de manipulação de dados (Busca as fotos da API)
-async function fetchPhotos() {
-  try {
-    // Faz requisição GET na API
-    const response = await fetch(config.apiUrl);
-
-    // Se a resposta não foi completa, mostra um erro
-    if (!response.ok) {
-      throw new Error(`Erro na requisição: ${response.status}`);
-    }
-
-    // Converte a resposta para JSON
-    const data = await response.json();
-
-    // Retorna o Array de fotos ou vazio se não houver dados
-    return data.pictures || [];
-  } catch (error) {
-    // Em caso de erro, mostra no console log
-    console.error("Falha ao carregar foto", error);
-    // Mostra a nofiticação de erro para o User
-    showNotification("Falha ao carregar fotos", "error");
-    // Retorna o array vazio para evitar erros no código
-    return [];
-  }
-}
->>>>>>> 9148cf44564b240e88d10a754b6248d248998eb0
 ```
 
 ## Como Rodar o Projeto
